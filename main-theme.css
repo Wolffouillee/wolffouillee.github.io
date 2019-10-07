@@ -1,0 +1,303 @@
+/* GENERAL */
+html {
+    font-family: 'montserrat', Arial, sans-serif;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-image:url('img/dark-natural-retro-decorative-backdrop_1253-335.jpg');
+}
+
+ul p, ol p {
+    font-size: 1.3em;
+    font-family: 'montserrat', Arial, sans-serif;
+}
+
+p a {
+    color: #4586b1;
+    text-decoration: none;
+    font-family: 'montserrat', Arial, sans-serif;
+}
+
+p:not(.profil-text) strong {
+    font-family: 'montserrat', Arial, sans-serif;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* SECTION */
+
+section:not(header) {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 70%;
+    margin: 60px auto;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 2em;
+}
+
+section:not(header) div[class*="-img"] img {
+    width: 80%;
+    margin: auto 30px;
+    height: auto;
+    max-width: 300px;
+    min-width: 150px;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+section:not(header) p[class*="-text"] {
+    font-size: 1.3em;
+    font-family: 'montserrat', Arial, sans-serif;
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.separator {
+    border-color: red;
+    width: 6%;
+    margin: 20px auto;
+}
+
+section:not(.profil-presentation) h2[class*="-title"] {
+    font-size: 3em;
+    font-weight: lighter;
+    background-color: black;
+    color: #ffffff;
+    padding: 0 20px;
+    opacity: 0.8;
+}
+
+.punaise {
+    position: absolute;
+    top: -50px;
+    left: 5px;
+    z-index: 99;
+}
+
+/* topbar */
+.navbar {
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-item {
+    display: block;
+    text-align: center;
+    width: 25%;
+    max-width: 100px;
+    height: auto;
+    text-decoration: none;
+    color: black;
+    padding: 24px;
+}
+
+.navbar-item:hover {
+    box-shadow: inset 0 2px 0 rgb(65, 24, 0);
+    color: rgb(65, 24, 0);
+    opacity: 0.7;
+}
+
+/* profil presentation */
+.profil-presentation {
+    background-image: url('img/art-art-materials-clips-159627.jpg') ;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 20px 20px 200px rgba(0, 0, 0, 0.8);
+}
+
+.profil-content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.profil-text {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+    width: 90%;
+    padding: 15px;
+    border-radius: 1em;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Rajdhani', Arial, sans-serif;
+    opacity: 0.95;
+}
+
+.profil-text strong {
+    text-transform: uppercase;
+}
+
+.profil-title {
+    font-size: 4em;
+    font-family: 'Righteous', Arial, sans-serif;
+    color: white;
+    background-color: black;
+    padding: 5px 1em;
+    opacity: 0.89;
+}
+
+.clignot {
+    display: inline-block;
+    height: 1em;
+    width: 2px;
+    vertical-align: text-top;
+    animation: clignot-cursor;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+}
+
+.profil-img img {
+    width: 200px;
+    height: 200px;
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 100%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+    border: 3px solid black;
+}
+
+/* parcours */
+.diploma-cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto 50px auto;
+}
+
+.college-card, .lycee-card, .pompier-card, .mcdo-card, .stmich-card {
+    width: 80%;
+    min-width: 200px;
+    max-width: 800px;
+    margin: 0 10px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 1em;
+    padding: 20px;
+}
+
+.college-card-header, .lycee-card-header, .pompier-card-header, .mcdo-card-header, .stmich-card-header {
+    position: relative;
+    top: 0;
+    text-align: center;
+}
+
+.college-card-header-separator, .lycee-card-header-separator, .pompier-card-header-separator, .mcdo-card-header-separator, .stmich-card-header-separator {
+    opacity: 0.5;
+}
+
+.college-card-info-list, .lycee-card-info-list, .pompier-card-info-list, .mcdo-card-info-list, .stmich-card-info-list {
+    width: 80%;
+    margin: auto;
+    padding: 0 20px; 
+}
+
+.college-card-info-list-items, .lycee-card-info-list-items, .pompier-card-info-list-items, .mcdo-card-info-list-items, .stmich-card-info-list-items {
+    margin: 20px;
+}
+
+#experience .download-cv-button {
+    display: block;
+    padding: 2em;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    background-color: rgb(1, 123, 204);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 1em;
+    border: 2px solid black
+}
+
+#experience .download-cv-button:hover {
+    color: rgb(1, 123, 204);
+    background-color: #ffffff;
+}
+
+/* hobbies */
+.hobbies-elmt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin: 25px auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    padding: 20px;
+}
+
+.hobbies-elmt p {
+    text-align: center;
+    width: calc(100%-64px);
+    font-family: 'monserrat', Arial, sans-serif;
+    font-size: 1.5em;
+}
+
+.hobbies-elmt img {
+    width: 64px;
+    height: 64px;
+    margin: 20px 30px;
+}
+
+.hobbies-elmt div[class*="elmt-"] {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+/* FOOTER */
+.main-footer {
+    position: absolute;
+    right: 0;
+    left: 0;
+    background-color: lightgrey;
+}
+
+.main-footer .footer-social-network {
+    list-style-type: none;
+}
+
+.main-footer .footer-social-network a {
+    display: block;
+    margin: 20px;
+}
+
+.main-footer .footer-social-network a:hover {
+    opacity: 0.5;
+}
+
+.main-footer .footer-social-network {
+    display: flex;
+    justify-content: center;
+}

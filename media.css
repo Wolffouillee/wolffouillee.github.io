@@ -1,0 +1,67 @@
+@media screen and (max-width: 800px) {
+    
+    /* GENERAL */
+    html {
+        overflow-x: hidden;
+    }
+
+    .profil-presentation {
+        padding-right: 33px;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    /* image */
+    *.img {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* apparence */
+    .punaise {
+        display: none;
+    }
+
+    .separator {
+        display: none;
+    }
+
+    .college-card, .lycee-card, .pompier-card, .mcdo-card, .stmich-card {
+        width: 99%;
+    }
+
+    .college-card ul, .lycee-card ul, .pompier-card ul, .mcdo-card ul, .stmich-card ul {
+        width: 99%;
+    }
+
+    /* text */
+    section:not(.profil-presentation) {
+        width: 95%;
+    }
+
+    section:not(.profil-presentation) h2[class*="-title"] {
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    section:not(header) p[class*="-text"] {
+        font-size: 1.2em;
+    }
+
+    .hobbies-elmt {
+        border: none;
+        font-size: 0.85em;
+    }
+
+    .hobbies-elmt div[class*="elmt-"] {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .navbar-mobile {
+        display: none;
+    }
+}
